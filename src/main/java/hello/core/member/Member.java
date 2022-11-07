@@ -1,7 +1,11 @@
 package hello.core.member;
 
+import hello.core.AppConfig;
+
 public class Member {
 
+    AppConfig appConfig = new AppConfig();
+    MemberService memberService = appConfig.memberService();
     private Long id;
     private String name;
     private Grade grade;
